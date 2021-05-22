@@ -4,9 +4,9 @@ function setup() {
   createCanvas(windowWidth,windowHeight);
   background(220);
   obj = [
-    new planet(10,20,createVector(windowWidth/2-100,windowHeight/2),createVector(0,-1200),color(255,0,0)),
-    new planet(5,20,createVector(windowWidth/2+100,windowHeight/2),createVector(0,1200),color(0,200,0)),
-    new planet(50,20,createVector(windowWidth/2,windowHeight/2),createVector(0,0),color(0,0,255))
+    new planet(5,5,createVector(windowWidth/2-100,windowHeight/2),createVector(0,-12000),color(255,0,0)),
+    new planet(5,5,createVector(windowWidth/2+100,windowHeight/2),createVector(0,12000),color(0,200,0)),
+    new planet(500,20,createVector(windowWidth/2,windowHeight/2),createVector(0,0),color(0,0,255))
   ]
   console.log(obj[1])
 }
