@@ -1,0 +1,5 @@
+gpos:
+Returns the xyz value of @s in the xyz of gPort.
+
+tp_pos:
+Places @s at the xyz from gPort. Does NOT work on players.

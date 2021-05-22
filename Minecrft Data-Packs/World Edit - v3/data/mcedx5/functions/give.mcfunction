@@ -1,0 +1,1 @@
+give @s carrot_on_a_stick{MCEstick:1b,display:{Name:'{"text":"WorldEditor","color":"green"}'}}

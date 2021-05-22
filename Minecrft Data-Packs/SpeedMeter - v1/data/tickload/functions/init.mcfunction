@@ -1,0 +1,2 @@
+function speedmeter:speedmeter_setup
+function math:math_init

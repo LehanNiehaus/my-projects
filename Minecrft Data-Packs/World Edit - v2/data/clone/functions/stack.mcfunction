@@ -1,0 +1,7 @@
+execute unless score @s Stack_offset matches -2147483648..2147483647 run scoreboard players set @s Stack_offset 0
+execute unless score @s Stack_count matches -2147483648..2147483647 run scoreboard players set @s Stack_count 0
+
+tellraw @s [{"text":"Stack Spacing","underlined":true,"color":"dark_aqua","clickEvent":{"action":"run_command","value":""},"hoverEvent":{"action":"show_text","contents":["",{"text":"The space between stacked clones"}]}},{"text":": "},{"score":{"name":"@s","objective":"Stack_offset"},"color":"gold","clickEvent":{"action":"suggest_command","value":"/trigger Stack_offset set "},"hoverEvent":{"action":"show_text","contents":["",{"text":"Click to change"}]}}]
+tellraw @s [{"text":"Stack Count","underlined":true,"color":"dark_aqua","clickEvent":{"action":"run_command","value":""},"hoverEvent":{"action":"show_text","contents":["",{"text":"The amount to add to the selection"}]}},{"text":": "},{"score":{"name":"@s","objective":"Stack_count"},"color":"gold","clickEvent":{"action":"suggest_command","value":"/trigger Stack_count set "},"hoverEvent":{"action":"show_text","contents":["",{"text":"Click to change"}]}}]
+
+tellraw @s [{"text":"Stack","color":"green","underlined": true, "clickEvent": {"action": "run_command", "value": "/function clone:stack/stack"}}]

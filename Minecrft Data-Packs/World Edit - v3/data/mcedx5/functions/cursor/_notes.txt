@@ -1,0 +1,21 @@
+run() shows cursor and returns xyz location of the cursor on cursor(#x,#y,#z) and gPort(#x,#y,#z)
+profile_load() takes what ever is on #profile and aplies it to the scoreboard. leaves #color unchanged if not provided. Also "repairs" #profile.
+profile_save() the inverse of load_profile(). aplies what is on the scoreboard to #profile, including the color.
+	To remove the color, do /scoreboard players operation #profile cursor %= #10^5 cursor
+
+scoreboard:	cursor:
+		#color [1;16] (subject to change)
+		#dist (1 = 0.1 blocks)
+		#fixed:
+			0 = ray-cast
+			1 = fixed (ray-cast ignore)
+		#p-block (pre-block) boolean
+		position xyz (output) on gPort
+		#profile: profile to be used, if loaded
+			color(optional):fixed:p-block:dist
+			00:0:0:000
+			color 00 will leave #color untouched
+		#x, #y, #z: position of the cursor
+
+		player [profiles]: the profile the player uses
+

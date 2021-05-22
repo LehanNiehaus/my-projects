@@ -1,0 +1,15 @@
+#tellraw @s ["",{"text":"Ignore Rotation","underlined":true,"color":"dark_aqua"},{"text":": "},{"text":"On","color":"green","clickEvent":{"action":"run_command","value":"/tag @s add ignore_rotation"}},{"text":"/","color":"dark_aqua"},{"text":"Off","color":"red","clickEvent":{"action":"run_command","value":"/tag @s remove ignore_rotation"}},{"text":"\n"},{"text":"Mirror Clone","underlined":true,"color":"dark_aqua"},{"text":": "},{"text":"On","color":"green","clickEvent":{"action":"run_command","value":"/tag @s add mirror"}},{"text":"/","color":"dark_aqua"},{"text":"Off","color":"red","clickEvent":{"action":"run_command","value":"/tag @s remove mirror"}},{"text":"\n"},{"text":"Clone Air","underlined":true,"color":"dark_aqua"},{"text":": "},{"text":"On","color":"green","clickEvent":{"action":"run_command","value":"/function clone:clone_air_on"}},{"text":"/","color":"dark_aqua"},{"text":"Off","color":"red","clickEvent":{"action":"run_command","value":"/function clone:clone_air_off"}},{"text":"\n"},{"text":"Stack Spacing","underlined":true,"color":"dark_aqua","clickEvent":{"action":"run_command","value":""},"hoverEvent":{"action":"show_text","contents":["",{"text":"The space between stacked clones"}]}},{"text":": "},{"score":{"name":"@s","objective":"Stack_offset"},"color":"gold","clickEvent":{"action":"suggest_command","value":"/trigger Stack_offset set "},"hoverEvent":{"action":"show_text","contents":["",{"text":"Click to change"}]}}]
+
+#tell @s Ignore Entities: Coming Soon
+
+#Mirror Clone: On/Off
+tellraw @s [{"text":"Mirror Clone","underlined":true,"color":"dark_aqua"},{"text":": "},{"text":"On","underlined":false,"color":"green","clickEvent":{"action":"run_command","value":"/tag @s add mirror"}},{"text":"/","color":"dark_aqua"},{"text":"Off","color":"red","clickEvent":{"action":"run_command","value":"/tag @s remove mirror"}}]
+
+#Ignore Rotation: On/Off
+tellraw @s [{"text":"Ignore Rotation","underlined":true,"color":"dark_aqua"},{"text":": "},{"text":"On","underlined":false,"color":"green","clickEvent":{"action":"run_command","value":"/tag @s add ignore_rotation"}},{"text":"/","color":"dark_aqua"},{"text":"Off","color":"red","clickEvent":{"action":"run_command","value":"/tag @s remove ignore_rotation"}}]
+
+#Ignore Air: On/Off
+tellraw @s [{"text":"Ignore Air","underlined":true,"color":"dark_aqua"},{"text":": "},{"text":"On","underlined":false,"color":"green","clickEvent":{"action":"run_command","value":"/function clone:clone_air_on"}},{"text":"/","color":"dark_aqua"},{"text":"Off","color":"red","clickEvent":{"action":"run_command","value":"/function clone:clone_air_off"}}]
+
+#Ignore Entities: On/Off
+tellraw @s [{"text":"Ignore Entities","underlined":true,"color":"dark_aqua"},{"text":": "},{"text":"On","underlined":false,"color":"green","clickEvent":{"action":"run_command","value":"/tag @s add ignore_entity"}},{"text":"/","color":"dark_aqua"},{"text":"Off","color":"red","clickEvent":{"action":"run_command","value":"/tag @s remove ignore_entity"}}]

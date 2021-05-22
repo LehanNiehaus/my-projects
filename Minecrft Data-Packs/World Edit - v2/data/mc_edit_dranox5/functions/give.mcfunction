@@ -1,0 +1,1 @@
+give @s carrot_on_a_stick{Tag:"Clone",display:{Name:'{"text":"WorldEditor","color":"green"}'}}

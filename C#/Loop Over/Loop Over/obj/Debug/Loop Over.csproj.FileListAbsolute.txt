@@ -1,0 +1,7 @@
+C:\Users\ivann\source\repos\Loop Over\Loop Over\bin\Debug\Loop Over.exe.config
+C:\Users\ivann\source\repos\Loop Over\Loop Over\bin\Debug\Loop Over.exe
+C:\Users\ivann\source\repos\Loop Over\Loop Over\bin\Debug\Loop Over.pdb
+C:\Users\ivann\source\repos\Loop Over\Loop Over\obj\Debug\Loop Over.csprojAssemblyReference.cache
+C:\Users\ivann\source\repos\Loop Over\Loop Over\obj\Debug\Loop Over.csproj.CoreCompileInputs.cache
+C:\Users\ivann\source\repos\Loop Over\Loop Over\obj\Debug\Loop Over.exe
+C:\Users\ivann\source\repos\Loop Over\Loop Over\obj\Debug\Loop Over.pdb

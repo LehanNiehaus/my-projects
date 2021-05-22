@@ -1,0 +1,15 @@
+raycast:
+Casts a straight line from the eyes of @s
+scoreboard:raycast
+	#m-dist				maximum distance ray is allowed to travel.(defualt=0)		(1=0.1blocks)
+	#dist					distance travelled																			(1=0.1blocks)
+	#hit					hit or miss																							(Boolean)
+	#ignore				Ignore all blocks.(auto-resets to 0)													(Boolean)
+	#d-r 					temporary value to determine step size
+	#r-dist 			temporary. the distance ramaining for the ray to reach m-dist.
+	#x #y #z			end position
+	#px #py #pz		pre-end position
+
+Give #m-dist a value then call start()
+Give #ignore before you start, should you use it.
+	#hit will return 0 if you use #ignore

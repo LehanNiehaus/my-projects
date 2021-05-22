@@ -1,0 +1,40 @@
+main:
+Runs: detect(), offhand(), drop(), holding), sneak(). (In that order)
+Run only once pre tick
+Tags:
+	mcerc 		= right-clicked				(recomended: remove after proccessed)
+	mcef 			= pressed F						(recomended: remove after proccessed)
+	mceq 			= pressed Q						(recomended: remove after proccessed)
+	mceh 			= is holding MCEstick	
+	sneakin 	= player is sneaking
+Note: drop() MUST run before holding(), in order to function
+
+
+
+
+detect:
+Checks if the MCEstick has been rightclicked and adds/removes a tag accordingly
+Usable only once per tick
+tag:mcerc
+Suggested: remove the tag after it is done being proccessed: tag @s remove rc
+
+offhand:
+Checks if player presses "F" while holding MCEstick and adds/removes a tag accordingly
+Usable only once per tic
+tag:mcef
+Suggested: remove the tag after it is done being proccessed: tag @s remove mcef
+
+drop:
+Checks if player presses "q" while holding MCEstick and adds/removes a tag accordingly
+Requires player to hold item for atleast 1 tick before it can function
+Usable only once per tic
+tag:mceq
+Suggested: remove the tag after it is done being proccessed: tag @s remove mceq
+
+holding:
+Checks if the MCEstick is held and adds/removes a tag accordingly
+tag:mceh
+
+sneak:
+Checks if the player is sneaking and adds/removes a tag accordingly
+tag:sneaking
